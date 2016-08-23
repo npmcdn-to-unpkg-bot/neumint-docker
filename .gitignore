@@ -1,0 +1,18 @@
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Js and Map Files
+**/app/**/*.js
+**/app/**/*.map
+
+# Dependency directories
+typings
+node_modules
+jspm_packages
+bower_components
+
+# Optional npm cache directory
+.npm
