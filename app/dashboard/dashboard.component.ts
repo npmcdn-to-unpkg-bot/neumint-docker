@@ -11,7 +11,7 @@ import { ExpenseService } from '../expenses/expense.service';
   styleUrls: ['app/dashboard/dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  public pageTitle: string = 'Expenses Dashboard';
+  public pageTitle: string = 'Dashboard - Top Expenses';
   
   expenses: Expense[] = [];
 
