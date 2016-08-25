@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import './rxjs-extensions';
+
 @Component({
   selector: 'mint-app',
   template:
@@ -12,7 +14,7 @@ import { Component } from '@angular/core';
                 <a class="navbar-brand" style="text-shadow:1px 1px 2px #2e2e2e;font-size:25px">{{pageTitle}}</a>
                 </div>
                 <ul class='nav navbar-nav navbar-right'>
-                    <li><a [routerLink]="['/dashboard']">Home</a></li>
+                    <li><a [routerLink]="['/dashboard']"><i class="fa fa-tachometer fa-fw"></i>&nbsp;Home</a></li>
                     <li><span class="divider">|</span></li>
                     <li><a [routerLink]="['/expenses']">Expense List</a></li>
                 </ul>

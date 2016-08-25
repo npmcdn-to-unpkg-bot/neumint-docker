@@ -9,5 +9,12 @@
         <div class="row"  >
             
         </div>
+        <div class="grid grid-pad">
+  <div *ngFor="let expense of expenses" class="col-1-4">
+    <div class="box rotate">
+      <div class="boxText">{{expense.name}}</div>
+    </div>
+  </div>
+</div>
     </div>
 </div>

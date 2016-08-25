@@ -17,20 +17,25 @@
             </div>
         </div>
 
-        <div class='has-error' *ngIf='errorMessage'></div>
+        <div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
 
         <div class='table-responsive'>
             <table class='table' >
                 <thead>
                     <tr>
-                        <th>Id</th>
                         <th>Name</th>
                         <th>Category</th>
                         <th>Amount</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor='let expense of expenses'>
+                        <td> <a [routerLink]="['/expense', expense.id]">
+                            {{expense.name}}
+                            </a>
+                        </td>
+                        <td>{{ expense.category }}</td>
+                        <td>{{ expense.amount | currency:'USD':true:'1.2-2' }}</td>
                     </tr>
                 </tbody>
             </table>
