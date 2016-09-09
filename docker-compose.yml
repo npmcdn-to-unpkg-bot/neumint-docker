@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  node:
+    container_name: neumintwebapp
+    image: neumint-docker
+    build:
+      context: .
+      dockerfile: dockerfiles/dev.dockerfile
+    ports:
+      - "3000:3000"

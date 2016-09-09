@@ -16,8 +16,10 @@ WORKDIR   /var/www
 # execute any commands in a new layer on top of the current image and commit the results
 RUN       npm install
 
+
 # app binds to port 3000 so we'll use the EXPOSE instruction to have it mapped by the docker daemon:
 EXPOSE $PORT
 
 # configure a container that will run as an executable
 ENTRYPOINT ["npm", "start"]
+
